@@ -1,0 +1,11 @@
+--langdef=vimhelp
+--langmap=vimhelp:.txt.help
+--kinddef-vimhelp=d,def,definition using *
+
+--_tabledef-vimhelp=toplevel
+--_tabledef-vimhelp=defs
+
+--_mtable-regex-vimhelp=toplevel/\*//{tenter=defs}
+--_mtable-regex-vimhelp=toplevel/.//
+
+--_mtable-regex-vimhelp=defs/([:{}._><\/@!#()a-zA-Z_0-9\-]+)\*/\1/d/
